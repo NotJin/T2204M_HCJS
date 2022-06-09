@@ -1,0 +1,23 @@
+h1{
+    color: #d2933f;
+}
+p{
+    color: #e52d9b;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.25;/* 1.25 * 20px */
+    text-align: justify;/* left right center justify */
+    text-transform: none;/* uppercase lowercase capitalize none */
+    text-decoration: none;/* underline line-through overline none */
+    text-indent: 10px;/* lùi đầu dòng */
+    font-style: italic;
+    background-color: #3333;
+    border-bottom: 1px solid red;
+
+    width: 600px;/* kích thước khối hiển thị */
+}
+body{
+    background-image: url("../images/tải xuống.jpg");
+    background-size: cover;
+}
