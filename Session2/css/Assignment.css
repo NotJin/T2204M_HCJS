@@ -1,0 +1,17 @@
+h1{
+    color: dodgerblue;
+}
+h3{
+    font-family: Arial;
+}
+p{
+    width: 950px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+a{
+    color: darkblue;
+}
+img{
+    width: 700px;
+}
