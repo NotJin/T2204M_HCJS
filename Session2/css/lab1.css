@@ -9,9 +9,14 @@ h3{
 pre{
     font-family: "Times New Roman";
 }
-p{
+p {
     line-height: 1.25;
     border-bottom: 2px dashed #ff0000;
+}
+p{
+    border-bottom: 2px dashed #ff0000;
+    line-height: 1.25;
+>>>>>>> origin/master
 }
 span{
     text-transform: capitalize;
