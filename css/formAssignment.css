@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 50%;
+    margin: auto;
+    line-height: 2.5;
+}
+input[type='text']{
+    font-family: inherit;
+    background-color: #ececec;
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 7px 0;
+    font-size: 1.3rem;
+}
+select{
+    width: 100%;
+    font-size: 1.3rem;
+    background-color: #ececec;
+}
+.col-se-1{
+    float: right;
+    width: 50%;
+}
+.col-se-2{
+    width: 50%;
+    float: left;
+}
+.col1{
+    float: left;
+}
+.col2{
+    float: right;
+}
