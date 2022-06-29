@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/assignment-JS2.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <section class="section main">
+        <div class="container">
+            <div class="container-header">
+                <div class="row filte-left">
+                    <div class="col filter-icon">
+                        <p id="icon"><img src="" width="250px"></p>
+                    </div>
+                    <div class="col filter-temp">
+                        <p><span id="temp"></span><sup><sup>o</sup>C | <sup>o</sup>F</sup></p>
+                    </div>
+                    <div class="col filter-other">
+                        <p id="prec">0</p>
+                        <p id="humd">33</p>
+                        <p id="wind">23</p>
+                    </div>
+                </div>
+                <div class="filter-right">
+                    <p id="city"></p>
+                    <div class="row filter-time">
+                        <div class="col filter-day">
+                            <p id="day"></p>
+                        </div>
+                        <div class="col filter-hou">
+                            <p id="hou">4</p>
+                        </div>
+                    </div>
+                    <p id="dec">sunny</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="libs/jquery/jquery.js"></script>
+    <script type="text/javascript">
+        $.ajax({
+            url: "https://api.openweathermap.org/data/2.5/weather?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
+            method: "get",
+            success: function (data){
+                console.log()
+                $("#icon").html("<img src='https://openweathermap.org/img/wn/"+
+                    data.weather[0].icon+"@2x.png' />");
+                var ct = $("#city");
+                ct.text(data.name+ ", " +data.sys.country);
+                $("#temp").html(data.main.temp);
+                $("#prec").html("Precipitation: "+data.main.pressure+ "%");
+                $("#humd").html("Humidity: "+data.main.humidity+ "%");
+                $("#wind").html("Wind: "+data.wind.speed+ " km/h");
+                const d = new Date();
+                $("#day").html(d.getDate());
+                $("#hou").html(d.getHours()+":"+d.getMinutes());
+                $("#dec").text(data.weather[0].description);
+            }
+        })
+    </script>
+</body>
+</html>

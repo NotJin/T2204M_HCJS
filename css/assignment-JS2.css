@@ -1,0 +1,44 @@
+.container-header{
+    width: 600px;
+    margin: 100px 200px;
+    display: block;
+    line-height: 0.5;
+}
+.filte-left{
+    float: left;
+}
+.filter-right{
+    float: right;
+}
+.filter-icon{
+    margin-bottom: 30px;
+}
+.filter-temp{
+    white-space: nowrap;
+    font-size: 35px;
+}
+.filter-temp p{
+    margin-top: 10px;
+}
+.filter-temp span{
+    font-size: 60px;
+}
+.filter-other{
+    color: #888888;
+    white-space: nowrap;
+}
+.filter-day{
+    color: #888888;
+}
+#icon{
+    margin-top: -20px;
+}
+#city{
+
+}
+#dec{
+    color: #888888;
+}
+#hou{
+    color: #888888;
+}
