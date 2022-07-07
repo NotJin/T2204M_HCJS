@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+.filter-container{
+    margin: 10px 0;
+    flex-basis: 19%;
+    height: 150px;
+    background-color: #cbdfee;
+    opacity: 0.9;
+    box-sizing: border-box;
+}
+.filter-header{
+    margin: 0;
+}
+.filter-header .date{
+    padding-right: 0;
+}
+.filter-header .time{
+    padding-left: 0;
+}
+.filter-weather{
+    margin: -20px 0;
+    align-items: center;
+    justify-content: center;
+}
+.filter-weather .temp{
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 0;
+}
+.filter-weather .icon img{
+    width: 80px;
+}
+.filter-foot{
+    margin: 0;
+    padding: 0 12px;
+}
