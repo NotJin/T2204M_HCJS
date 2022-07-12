@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 600px;
+    margin: 50px auto;
+}
+.form-head{
+    background-color: #ead053;
+    padding: 30px;
+}
+.head-tittle{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.head-tittle h5{
+    text-align: center;
+    font-family: Arial;
+    color: #83721d;
+    margin: 0 auto;
+}
+.total{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 40px 0;
+}
+.total h3{
+    text-align: center;
+    font-family: Arial;
+    letter-spacing: 5px;
+    margin: 0 20px 0 auto;
+}
+.total h1{
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 0 auto 0 20px;
+}
+.head-button{
+    margin: -30px auto 0 auto;
+    text-align: center;
+    align-items: center;
+}
+.head-button button{
+    width: 200px;
+    height: 50px;
+    border: 2px lightgray solid;
+    background-color: white;
+}
+#visa{
+    margin-right: 5px;
+}
+#paypal{
+    margin-left: 5px;
+}
+.form-input{
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.form-input div label{
+    margin: 20px 0 10px 0;
+}
+.form-input div input[name='cvv']{
+    width: 200px;
+}
+.form-input div input[name='card-num']{
+    width: 200px;
+}
+.form-input div input{
+    width: 475px;
+    text-align: left;
+    padding: 10px 0 10px 5px ;
+    border: 0.09rem lightgray solid;
+    border-radius: 0px;
+}
+.form-input div button{
+    margin-top: 30px;
+    border: none;
+    background-color: red;
+    width: 250px;
+    height: 40px;
+    font-family: Arial;
+    color: white;
+    letter-spacing: 3px;
+}
+.form-input div button:hover{
+    box-shadow: 5px 5px 5px gray;
+}
+
